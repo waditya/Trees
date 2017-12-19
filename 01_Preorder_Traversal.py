@@ -9,6 +9,9 @@ def preOrder(root):
     if(root == None):
         return
     print root.data,
+    #Comma after print in Python 2 implies that next print statment should continue on the same line
+    #In Python 2, use print(root.data, end = '')
+    
     preOrder(root.left)
     preOrder(root.right)
     
